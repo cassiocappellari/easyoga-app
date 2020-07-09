@@ -12,11 +12,10 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: var(--main-color);
+    background-image: url('/assets/background-photo.jpg');
 }
 
 header {
-    background-color: white;
     width: 100%;
     padding: 32px;
     text-align: center;
@@ -33,24 +32,19 @@ header {
 
 .links a {
     text-decoration: none;
-    color: #777;
+    color: white;
     position: relative;
 }
 
 .links a.active {
     font-weight: bold;
-    color: var(--main-color);
-}
-
-.links a:hover {
-    color: var(--main-color);
 }
 
 .links a::after {
     content: "";
     width: 0;
     height: 2px;
-    background-color: var(--main-color);
+    background-color: white;
     position: absolute;
     left: 0;
     bottom: -4px;
