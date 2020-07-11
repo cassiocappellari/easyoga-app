@@ -4,7 +4,9 @@ const routes = require('./routes')
 
 const server = express()
 
-server.use(express.static('public'))
+server.use(express.static('public/styles'))
+server.use(express.static('public/assets'))
+
 server.use(routes)
 
 server.set('view engine', 'njk')
