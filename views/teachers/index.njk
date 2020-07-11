@@ -1,12 +1,49 @@
 {% extends 'layout.njk' %}
 
+{% block styles %}
+    <link rel="stylesheet" href="/teachers.css">
+{% endblock %}
+
 {% block content %}
     <div class="card">
         <section class="avatar">
-            <div>teste</div>
+            
         </section>
         <section class="details">
 
+            <h3>Details</h3>
+
+            <div class="item">
+                <div>Name</div>
+                <div>Tatiana Fischer</div>
+            </div>
+
+            <div class="item">
+                <div>Age</div>
+                <div>28</div>
+            </div>
+
+            <div class="item">
+                <div>Certificates</div>
+                <div>Bela Vista School</div>
+            </div>
+
+            <div class="item">
+                <div>Class Type</div>
+                <div>Online</div>
+            </div>
+
+            <div class="item">
+                <div>Specialties</div>
+                <span>Yoga</span>
+                <span>Nutrition</span>
+            </div>
+
+            <div class="item">
+                <div>Since</div>
+                <div>01/01/2019</div>
+            </div>
+            
         </section>
     </div>
 {% endblock content %}

@@ -1,0 +1,90 @@
+.card {
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 400px;
+    border-radius: 8px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+
+    animation-name: up;
+    animation-duration: 200ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.avatar {
+    background: url('https://source.unsplash.com/collection/4412133/500x500') no-repeat center center / cover;
+    width: 320px;
+    height: 500px;
+    border-radius: 8px 0 0 8px;
+}
+
+.details {
+    width: 480px;
+    margin: 16px;
+}
+
+.details .item {
+    padding: 12px 0;
+}
+
+.details .item:last-child {
+    border: none;
+}
+
+.details h3,
+.details .item div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+.details .item div:nth-child(2) {
+    color: #555;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.details .item span {
+    padding: 8px 16px;
+    background-color: blue;
+    border-radius: 16px;
+    color: white;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.details h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
