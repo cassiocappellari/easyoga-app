@@ -1,3 +1,7 @@
+:root {
+    --calm-color: rgb(32, 93, 197);
+}
+
 .card {
     background-color: white;
     width: 800px;
@@ -18,7 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 6px -2px rgba(0, 0, 0, 0.4);
 
     animation-name: up;
     animation-duration: 200ms;
@@ -72,7 +76,20 @@
 
 .details .item span {
     padding: 8px 16px;
-    background-color: blue;
+    background-color: var(--calm-color);
+    border-radius: 16px;
+    color: white;
+    margin-right: 4px;
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.details .item:last-child div:nth-child(2) {
+    padding: 8px 16px;
+    background-color: var(--calm-color);
     border-radius: 16px;
     color: white;
     margin-right: 4px;
@@ -86,5 +103,5 @@
 .details h3 {
     text-transform: uppercase;
     font-weight: bold;
-    color: black;
+    color: var(--calm-color);
 }
