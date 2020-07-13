@@ -1,0 +1,41 @@
+:root {
+    --calm-color: rgb(32, 93, 197);
+}
+
+input {
+    width: 92%;
+    height: 24px;
+    outline-color: var(--calm-color);
+    font-size: 14px;
+}
+
+select {
+    width: 92%;
+    height: 24px;
+    outline-color: var(--calm-color);
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+input[type='radio'] {
+    width: 24px;
+    height: 10px;
+    margin-right: 6px;
+}
+
+
+
+button[type='submit'] {
+    padding: 8px 32px;
+    background: var(--calm-color);
+    border-radius: 4px;
+    width: 92%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}

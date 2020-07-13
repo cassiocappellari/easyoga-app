@@ -1,0 +1,84 @@
+{% extends 'layout.njk' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/teachers.css">
+    <link rel="stylesheet" href="/create.css">
+{% endblock %}
+
+{% block content %}
+    <form class="card" method="POST" action="/teachers">
+        <section class="avatar">
+            
+        </section>
+        <section class="details">
+
+            <h3>New Teacher</h3>
+
+            <div class="item">
+                <div>Avatar URL</div>
+                <div>
+                    <input
+                        type="text"
+                        name="avatar_url"
+                        placeholder="http://"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Name</div>
+                <div>
+                    <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter your name! :)"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Date of Birth</div>
+                <div>
+                    <input
+                        type="date"
+                        name="dateOfBirth"
+                    >
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Education</div>
+                <div>
+                    <select name="education">
+                        <option value="High School" selected>High School</option> 
+                        <option value="Bachelor">Bachelor Degree</option>
+                        <option value="Master">Master</option>
+                        <option value="Doctorate">Doctorate</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Gender</div>
+                <div>
+                    <span><input type="radio" name="gender" value="M">Male</span>
+                    <span><input type="radio" name="gender" value="F">Female</span>
+                </div>
+            </div>
+
+            <div class="item">
+                <div>Services</div>
+                <div>
+                    <input
+                        type="text"
+                        name="services"
+                        placeholder='Enter your services separated by comma!:)'
+                    >
+                </div>
+            </div>
+
+            <button type="submit">Send!</button>
+            
+        </section>
+    </div>
+{% endblock content %}

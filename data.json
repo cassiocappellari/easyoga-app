@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Cássio Cappellari",
+      "dateOfBirth": 1593561600000,
+      "education": "Bachelor",
+      "gender": "F",
+      "services": "Yoga",
+      "createdAt": 1594673031325
+    }
+  ]
+}

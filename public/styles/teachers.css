@@ -5,17 +5,7 @@
 .card {
     background-color: white;
     width: 800px;
-    height: 500px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.card {
-    background-color: white;
-    width: 800px;
-    min-height: 400px;
+    min-height: 536px;
     border-radius: 8px;
     margin: 0 auto;
 
@@ -42,7 +32,7 @@
 .avatar {
     background: url('https://source.unsplash.com/collection/4412133/500x500') no-repeat center center / cover;
     width: 320px;
-    height: 500px;
+    height: 540px;
     border-radius: 8px 0 0 8px;
 }
 
