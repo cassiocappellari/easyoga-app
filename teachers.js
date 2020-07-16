@@ -11,7 +11,7 @@ exports.post = function(req, res) {
         }
     }
 
-    let {avatar_url, name, dateOfBirth, education, gender, services} = req.body
+    let {avatar_url, name, dateOfBirth, skills, gender, services} = req.body
 
     dateOfBirth = Date.parse(dateOfBirth)
     const createdAt = Date.now()
@@ -22,7 +22,7 @@ exports.post = function(req, res) {
         avatar_url,
         name,
         dateOfBirth,
-        education,
+        skills,
         gender,
         services,
         createdAt
@@ -33,7 +33,26 @@ exports.post = function(req, res) {
         
         return res.redirect('/teachers')
     })
-    
-    // res.send(req.body)
+}
 
+exports.show = function(req, res) {
+
+    const {id} = req.params
+
+    const foundTeacher = data.teachers.find(function(teacher){
+        return teacher.id == id
+    })
+
+    if(!foundTeacher) {
+        return res.send('Teacher not found! :(')
+    }
+
+    const teacher = {
+        ...foundTeacher,
+        dateOfBirth: '',
+        services: foundTeacher.services.split(','),
+        createdAt: '',
+    }
+
+    return res.render('teachers/show', {teacher})
 }

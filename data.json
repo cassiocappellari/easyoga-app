@@ -2,13 +2,23 @@
   "teachers": [
     {
       "id": 1,
-      "avatar_url": "http://google.com",
-      "name": "Cássio Cappellari",
-      "dateOfBirth": 1593561600000,
-      "education": "Bachelor",
-      "gender": "F",
+      "avatar_url": "https://source.unsplash.com/collection/4412133/500x500",
+      "name": "Cássio",
+      "dateOfBirth": 584409600000,
+      "skills": "Intermediate (2 to 6 years +)",
+      "gender": "M",
       "services": "Yoga",
-      "createdAt": 1594673031325
+      "createdAt": 1594927344146
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/4412133/500x500",
+      "name": "Cássio",
+      "dateOfBirth": 584409600000,
+      "skills": "Advanced (6 to 20 years +)",
+      "gender": "M",
+      "services": "Yoga, Minfullness, Guided Meditations",
+      "createdAt": 1594927588886
     }
   ]
 }
