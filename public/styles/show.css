@@ -95,3 +95,17 @@
     font-weight: bold;
     color: var(--calm-color);
 }
+
+a.button {
+    padding: 8px 32px;
+    background: var(--calm-color);
+    border-radius: 4px;
+    width: 92%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+}

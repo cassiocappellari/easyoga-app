@@ -28,8 +28,6 @@ input[type='radio'] {
     margin-right: 6px;
 }
 
-
-
 button[type='submit'] {
     padding: 8px 32px;
     background: var(--calm-color);

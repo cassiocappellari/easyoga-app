@@ -3,22 +3,22 @@
     {
       "id": 1,
       "avatar_url": "https://source.unsplash.com/collection/4412133/500x500",
-      "name": "Cássio",
+      "name": "Cássio Cappellari",
       "dateOfBirth": 584409600000,
-      "skills": "Intermediate (2 to 6 years +)",
+      "skills": "Beginner",
       "gender": "M",
       "services": "Yoga",
-      "createdAt": 1594927344146
+      "createdAt": 1594929237661
     },
     {
       "id": 2,
       "avatar_url": "https://source.unsplash.com/collection/4412133/500x500",
-      "name": "Cássio",
-      "dateOfBirth": 584409600000,
-      "skills": "Advanced (6 to 20 years +)",
-      "gender": "M",
-      "services": "Yoga, Minfullness, Guided Meditations",
-      "createdAt": 1594927588886
+      "name": "Tatiana Fischer",
+      "dateOfBirth": 687139200000,
+      "skills": "Intermediate",
+      "gender": "F",
+      "services": "Yoga, Guided Meditation",
+      "createdAt": 1594929295315
     }
   ]
 }
