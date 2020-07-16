@@ -1,0 +1,65 @@
+<div class="item">
+    <div>Avatar URL</div>
+    <div>
+        <input
+            type="text"
+            name="avatar_url"
+            placeholder="http://"
+            value="{{teacher.avatar_url}}"
+        >
+    </div>
+</div>
+
+<div class="item">
+    <div>Name</div>
+    <div>
+        <input
+            type="text"
+            name="name"
+            placeholder="Enter your name! :)"
+            value="{{teacher.name}}"
+        >
+    </div>
+</div>
+
+<div class="item">
+    <div>Date of Birth</div>
+    <div>
+        <input
+            type="date"
+            name="dateOfBirth"
+            value={{teacher.dateOfBirth}}
+        >
+    </div>
+</div>
+
+<div class="item">
+    <div>Skill Level</div>
+    <div>
+        <select name="skills">
+            <option value="Beginner" selected>Beginner (0 to 2 years +)</option> 
+            <option value="Intermediate">Intermediate (2 to 6 years +)</option>
+            <option value="Advanced">Advanced (6 to 20 years +)</option>
+            <option value="Buddha">Buddha (20 years +)</option>
+        </select>
+    </div>
+</div>
+
+<div class="item">
+    <div>Gender</div>
+    <div>
+        <span><input type="radio" name="gender" value="M">Male</span>
+        <span><input type="radio" name="gender" value="F">Female</span>
+    </div>
+</div>
+
+<div class="item">
+    <div>Services</div>
+    <div>
+        <input
+            type="text"
+            name="services"
+            placeholder='Enter your services separated by comma!:)'
+        >
+    </div>
+</div>
