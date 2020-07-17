@@ -64,7 +64,7 @@ exports.edit = function(req, res) {
     const {id} = req.params
 
     const foundTeacher = data.teachers.find(function(teacher){
-        return teacher.id == id
+        return id == teacher.id
     })
 
     if(!foundTeacher) {
@@ -73,7 +73,8 @@ exports.edit = function(req, res) {
 
     const teacher = {
         ...foundTeacher,
-        dateOfBirth: date(foundTeacher.dateOfBirth)
+        dateOfBirth: date(foundTeacher.dateOfBirth),
+        services: foundTeacher.services.split(',')
     }
 
     return res.render('teachers/edit', {teacher})

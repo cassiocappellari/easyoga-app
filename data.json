@@ -19,6 +19,16 @@
       "gender": "F",
       "services": "Yoga, Guided Meditation",
       "createdAt": 1594929295315
+    },
+    {
+      "id": 3,
+      "avatar_url": "http://google.com",
+      "name": "Cássio",
+      "dateOfBirth": 584409600000,
+      "skills": "Advanced",
+      "gender": "M",
+      "services": "Yoga",
+      "createdAt": 1594997672837
     }
   ]
 }

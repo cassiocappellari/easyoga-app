@@ -48,8 +48,26 @@
 <div class="item">
     <div>Gender</div>
     <div>
-        <span><input type="radio" name="gender" value="M">Male</span>
-        <span><input type="radio" name="gender" value="F">Female</span>
+        <span>
+            <input
+                type="radio"
+                name="gender"
+                value="M"
+                {% if teacher.gender == 'M' %}
+                    checked
+                {% endif %}
+            >Male
+        </span>
+        <span>
+            <input
+                type="radio"
+                name="gender"
+                value="F"
+                {% if teacher.gender == 'F' %}
+                    checked
+                {% endif %}
+            >Female
+        </span>
     </div>
 </div>
 
@@ -60,6 +78,9 @@
             type="text"
             name="services"
             placeholder='Enter your services separated by comma!:)'
+            value='{{teacher.services}}'
         >
     </div>
 </div>
+
+<button type="submit">Send!</button>
