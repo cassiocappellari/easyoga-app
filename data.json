@@ -1,33 +1,33 @@
 {
   "teachers": [
     {
-      "id": "1",
-      "avatar_url": "https://source.unsplash.com/collection/4412133/500x500",
-      "name": "Cássio S. Cappellari",
-      "dateOfBirth": 584409600000,
-      "skills": "Beginner",
-      "gender": "F",
-      "services": "Yoga, Gym",
-      "createdAt": 1594929237661
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://source.unsplash.com/collection/4412133/500x500",
-      "name": "Tatiana",
-      "dateOfBirth": 687139200000,
-      "skills": "Intermediate",
-      "gender": "F",
-      "services": "Yoga",
-      "createdAt": 1595106812764
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://source.unsplash.com/collection/4412133/500x500",
+      "id": 1,
+      "avatar_url": "https://images.unsplash.com/photo-1586035758264-c5c685f55e9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
       "name": "Cássio Cappellari",
       "dateOfBirth": 584409600000,
       "skills": "Beginner",
       "gender": "M",
-      "services": "Gym",
+      "services": "Yoga, Guided Meditations",
+      "createdAt": 1594929237661
+    },
+    {
+      "id": "2",
+      "avatar_url": "https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
+      "name": "Cássio Cappellari",
+      "dateOfBirth": 584409600000,
+      "skills": "Advanced",
+      "gender": "M",
+      "services": "Yoga, Mindfulness",
+      "createdAt": 1595106812764
+    },
+    {
+      "id": "3",
+      "avatar_url": "https://images.unsplash.com/photo-1552196563-55cd4e45efb3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=626&q=80",
+      "name": "Cássio Cappellari",
+      "dateOfBirth": 584409600000,
+      "skills": "Buddha",
+      "gender": "M",
+      "services": "Yoga",
       "createdAt": 1595183189480
     }
   ]

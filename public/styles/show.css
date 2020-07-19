@@ -109,3 +109,8 @@ a.button {
     text-align: center;
     text-decoration: none;
 }
+
+a.button:hover {
+    opacity: 0.7;
+    transition: 300ms;
+}

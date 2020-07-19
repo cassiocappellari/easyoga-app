@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-    <div class="card">
+    <div class="card table-container">
         <table>
             <thead>
                 <tr>
@@ -17,8 +17,11 @@
             <tbody>
                 {%for teacher in teachers%}
                     <tr>
-                        <td>{{teacher.name}}</td>
+                        <td>
+                            <span style="background-image: url({{teacher.avatar_url}})"></span>
+                            {{teacher.name}}</td>
                         <td>{{teacher.services}}</td>
+                        <td><a href="/teachers/{{teacher.id}}">Details</a></td>
                     </tr>
                 {%endfor%}
             </tbody>
