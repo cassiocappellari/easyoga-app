@@ -6,44 +6,22 @@
 
 {% block content %}
     <div class="card">
-        <section class="avatar">
-            
-        </section>
-        <section class="details">
-
-            <h3>Details</h3>
-
-            <div class="item">
-                <div>Name</div>
-                <div>Tatiana Fischer</div>
-            </div>
-
-            <div class="item">
-                <div>Age</div>
-                <div>28</div>
-            </div>
-
-            <div class="item">
-                <div>Skill Level</div>
-                <div>Intermediate (2 to 6 years +)</div>
-            </div>
-
-            <div class="item">
-                <div>Gender</div>
-                <div>Female</div>
-            </div>
-
-            <div class="item">
-                <div>Services</div>
-                <span>Yoga</span>
-                <span>Guided Meditations</span>
-            </div>
-
-            <div class="item">
-                <div>Since</div>
-                <div>01/01/2019</div>
-            </div>
-            
-        </section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Teachers</th>
+                    <th>Services</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                {%for teacher in teachers%}
+                    <tr>
+                        <td>{{teacher.name}}</td>
+                        <td>{{teacher.services}}</td>
+                    </tr>
+                {%endfor%}
+            </tbody>
+        </table>
     </div>
 {% endblock content %}

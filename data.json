@@ -19,6 +19,16 @@
       "gender": "F",
       "services": "Yoga",
       "createdAt": 1595106812764
+    },
+    {
+      "id": 3,
+      "avatar_url": "https://source.unsplash.com/collection/4412133/500x500",
+      "name": "Cássio Cappellari",
+      "dateOfBirth": 584409600000,
+      "skills": "Beginner",
+      "gender": "M",
+      "services": "Gym",
+      "createdAt": 1595183189480
     }
   ]
 }
