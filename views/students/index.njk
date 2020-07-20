@@ -6,12 +6,13 @@
 
 {% block content %}
     <div class="card table-container">
-        <a href="/students/create">New Member</a>
+        <a href="/students/create">New Student</a>
         <table>
             <thead>
                 <tr>
                     <th>Students</th>
-                    <th>Services</th>
+                    <th>Email</th>
+                    <th>Skill Level</th>
                     <th>Options</th>
                 </tr>
             </thead>
@@ -21,7 +22,8 @@
                         <td>
                             <span style="background-image: url({{student.avatar_url}})"></span>
                             {{student.name}}</td>
-                        <td>{{student.services}}</td>
+                        <td>{{student.email}}</td>
+                        <td>{{student.skills}}</td>
                         <td><a href="/students/{{student.id}}">Details</a></td>
                     </tr>
                 {%endfor%}

@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('/background-photo.jpg');
+    background-image: url('https://images.unsplash.com/photo-1503614472-8c93d56e92ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1398&q=80');
 }
 
 header {
@@ -23,7 +23,8 @@ header {
 }
 
 .links {
-    font-size: 22px;
+    font-size: 20px;
+    line-height: 32px;
 }
 
 .links a + a {
@@ -34,6 +35,17 @@ header {
     text-decoration: none;
     color: white;
     position: relative;
+}
+
+.links {
+    position: relative;
+}
+
+.links #logo {
+    font-family: 'Macondo Swash Caps', cursive;
+    font-size: 28px;
+    position: absolute;
+    left: 260px;
 }
 
 .links a.active {

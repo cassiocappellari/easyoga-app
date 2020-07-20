@@ -6,3 +6,10 @@ for (let item of menuItens) {
         item.classList.add('active')
     }
 }
+
+formDelete.addEventListener('submit', function(event){
+    const deleteOption = confirm('Are you sure?')
+    if(!deleteOption) {
+        event.preventDefault()
+    }
+})

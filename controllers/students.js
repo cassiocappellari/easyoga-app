@@ -54,6 +54,7 @@ exports.show = function(req, res) {
 
     const student = {
         ...foundStudent,
+        skill: skill(foundStudent.skills),
         dateOfBirth: date(foundStudent.dateOfBirth).birthDate,
         skill: skill(foundStudent.skills)
     }

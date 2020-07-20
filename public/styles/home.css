@@ -1,0 +1,44 @@
+:root {
+    --calm-color: rgb(32, 93, 197);
+}
+
+.card {
+    background-color: white;
+    width: 800px;
+    min-height: 536px;
+    border-radius: 8px;
+    margin: 0 auto;
+
+    box-shadow: 10px 10px 6px -2px rgba(0, 0, 0, 0.4);
+
+    animation-name: up;
+    animation-duration: 200ms;
+    animation-timing-function: ease-out;
+}
+
+.card .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-background img {
+    width: 350px;
+    height: 300px;
+    margin-top: 128px;
+}
+
+.text {
+    padding: 32px;
+    margin-top: 128px;
+}
+
+.text h1 {
+    color: var(--calm-color);
+    font-weight: bold;
+}
+
+.text p {
+    margin-top: 32px;
+    max-width: 300px;
+    font-size: 22px;
+}

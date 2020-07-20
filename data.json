@@ -2,34 +2,13 @@
   "students": [
     {
       "id": 1,
-      "avatar_url": "http://google.com",
+      "avatar_url": "https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
       "name": "Cássio",
       "email": "cassiocappellari@gmail.com",
       "dateOfBirth": 584409600000,
-      "skills": "Advanced",
+      "skills": "Beginner",
       "gender": "M"
     }
   ],
-  "teachers": [
-    {
-      "id": 1,
-      "avatar_url": "https://images.unsplash.com/photo-1586035758264-c5c685f55e9c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-      "name": "Cássio Cappellari",
-      "dateOfBirth": 584409600000,
-      "skills": "Beginner",
-      "gender": "M",
-      "services": "Yoga",
-      "createdAt": 1594929237661
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://images.unsplash.com/photo-1566501206188-5dd0cf160a0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80",
-      "name": "Tatiana Fischer",
-      "dateOfBirth": 584409600000,
-      "skills": "Beginner",
-      "gender": "M",
-      "services": "Yoga, Mindfulness",
-      "createdAt": 1595106812764
-    }
-  ]
+  "teachers": []
 }
