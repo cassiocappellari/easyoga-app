@@ -1,5 +1,15 @@
 {
-  "studends": [],
+  "students": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Cássio",
+      "email": "cassiocappellari@gmail.com",
+      "dateOfBirth": 584409600000,
+      "skills": "Advanced",
+      "gender": "M"
+    }
+  ],
   "teachers": [
     {
       "id": 1,

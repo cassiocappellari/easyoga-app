@@ -6,44 +6,37 @@
 
 {% block content %}
     <div class="card">
-        <section class="avatar" style="background: url({{teacher.avatar_url}}) no-repeat center center / cover"></section>
+        <section class="avatar" style="background: url({{student.avatar_url}}) no-repeat center center / cover"></section>
         <section class="details">
 
             <h3>Details</h3>
 
             <div class="item">
                 <div>Name</div>
-                <div>{{teacher.name}}</div>
+                <div>{{student.name}}</div>
             </div>
 
             <div class="item">
-                <div>Age</div>
-                <div>{{teacher.age}}</div>
+                <div>Email</div>
+                <div>{{student.email}}</div>
+            </div>
+
+            <div class="item">
+                <div>Birthday</div>
+                <div>{{student.dateOfBirth}}</div>
             </div>
 
             <div class="item">
                 <div>Skill Level</div>
-                <div>{{teacher.skill}}</div>
+                <div>{{student.skill}}</div>
             </div>
 
             <div class="item">
                 <div>Gender</div>
-                <div>{{'Male' if teacher.gender == 'M' else 'Female'}}</div>
+                <div>{{'Male' if student.gender == 'M' else 'Female'}}</div>
             </div>
 
-            <div class="item">
-                <div>Services</div>
-                {%for service in teacher.services%}
-                    <span>{{service}}</span>
-                {%endfor%}
-            </div>
-
-            <div class="item">
-                <div>Since</div>
-                <div>{{teacher.createdAt}}</div>
-            </div>
-
-            <a href="/teachers/{{teacher.id}}/edit" class="button">Edit</a>
+            <a href="/students/{{student.id}}/edit" class="button">Edit</a>
             
         </section>
     </div>

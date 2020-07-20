@@ -18,21 +18,19 @@ exports.post = function(req, res) {
         }
     }
 
-    let {avatar_url, name, dateOfBirth, skills, gender, services} = req.body
+    dateOfBirth = Date.parse(req.body.dateOfBirth)
 
-    dateOfBirth = Date.parse(dateOfBirth)
-    const createdAt = Date.now()
-    const id = data.students.length + 1
+    let id = 1
+    const lastStudent = data.students[data.students.length - 1]
+
+    if(lastStudent) {
+        id = lastStudent.id + 1
+    }
 
     data.students.push({
         id,
-        avatar_url,
-        name,
-        dateOfBirth,
-        skills,
-        gender,
-        services,
-        createdAt
+        ...req.body,
+        dateOfBirth
     })
 
     fs.writeFile('data.json', JSON.stringify(data, null, 2), function(err) {
@@ -56,10 +54,8 @@ exports.show = function(req, res) {
 
     const student = {
         ...foundStudent,
-        age: age(foundStudent.dateOfBirth),
-        skill: skill(foundStudent.skills),
-        services: foundStudent.services.split(','),
-        createdAt: new Intl.DateTimeFormat('pt-BR').format(foundStudent.createdAt),
+        dateOfBirth: date(foundStudent.dateOfBirth).birthDate,
+        skill: skill(foundStudent.skills)
     }
 
     return res.render('students/show', {student})
@@ -78,8 +74,7 @@ exports.edit = function(req, res) {
 
     const student = {
         ...foundStudent,
-        dateOfBirth: date(foundStudent.dateOfBirth),
-        services: foundStudent.services.split(',')
+        dateOfBirth: date(foundStudent.dateOfBirth).iso
     }
 
     return res.render('students/edit', {student})

@@ -5,7 +5,7 @@
             type="text"
             name="avatar_url"
             placeholder="http://"
-            value="{{teacher.avatar_url}}"
+            value="{{student.avatar_url}}"
         >
     </div>
 </div>
@@ -17,7 +17,19 @@
             type="text"
             name="name"
             placeholder="Enter your name! :)"
-            value="{{teacher.name}}"
+            value="{{student.name}}"
+        >
+    </div>
+</div>
+
+<div class="item">
+    <div>Email</div>
+    <div>
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter your email! :)"
+            value="{{student.email}}"
         >
     </div>
 </div>
@@ -28,8 +40,34 @@
         <input
             type="date"
             name="dateOfBirth"
-            value={{teacher.dateOfBirth}}
+            value={{student.dateOfBirth}}
         >
+    </div>
+</div>
+
+<div class="item">
+    <div>Gender</div>
+    <div>
+        <span>
+            <input
+                type="radio"
+                name="gender"
+                value="M"
+                {% if student.gender == 'M' %}
+                    checked
+                {% endif %}
+            >Male
+        </span>
+        <span>
+            <input
+                type="radio"
+                name="gender"
+                value="F"
+                {% if student.gender == 'F' %}
+                    checked
+                {% endif %}
+            >Female
+        </span>
     </div>
 </div>
 
@@ -42,43 +80,5 @@
             <option value="Advanced">Advanced (6 to 20 years +)</option>
             <option value="Buddha">Buddha (20 years +)</option>
         </select>
-    </div>
-</div>
-
-<div class="item">
-    <div>Gender</div>
-    <div>
-        <span>
-            <input
-                type="radio"
-                name="gender"
-                value="M"
-                {% if teacher.gender == 'M' %}
-                    checked
-                {% endif %}
-            >Male
-        </span>
-        <span>
-            <input
-                type="radio"
-                name="gender"
-                value="F"
-                {% if teacher.gender == 'F' %}
-                    checked
-                {% endif %}
-            >Female
-        </span>
-    </div>
-</div>
-
-<div class="item">
-    <div>Services</div>
-    <div>
-        <input
-            type="text"
-            name="services"
-            placeholder='Enter your services separated by comma!:)'
-            value='{{teacher.services}}'
-        >
     </div>
 </div>

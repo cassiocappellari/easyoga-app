@@ -6,15 +6,15 @@
 {% endblock %}
 
 {% block content %}
-    <form class="card" method="POST" action="/teachers">
+    <form class="card" method="POST" action="/students">
         <section class="avatar">
             
         </section>
         <section class="details">
 
-            <h3>New Teacher</h3>
+            <h3>New Student</h3>
 
-            {%include 'teachers/fields.njk'%}
+            {%include 'students/fields.njk'%}
 
             <button type="submit">Send!</button>
             
