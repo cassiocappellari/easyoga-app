@@ -1,0 +1,23 @@
+{% extends 'layout.njk' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="/teachers.css">
+    <link rel="stylesheet" href="/create.css">
+{% endblock %}
+
+{% block content %}
+    <form class="card" method="POST" action="/teachers">
+        <section class="avatar">
+            
+        </section>
+        <section class="details">
+
+            <h3>New Teacher</h3>
+
+            {%include 'teachers/fields.njk'%}
+
+            <button type="submit">Send!</button>
+            
+        </section>
+    </div>
+{% endblock content %}

@@ -1,6 +1,6 @@
 const fs = require('fs')
-const data = require('./data.json')
-const {age, skill, date} = require('./useful')
+const data = require('../data.json')
+const {age, skill, date} = require('../useful')
 Intl = require('intl')
 
 exports.index =  function(req, res) {
@@ -136,4 +136,8 @@ exports.delete = function(req, res) {
     })
 
     return res.redirect('/teachers')
+}
+
+exports.create = function(req, res) {
+    return res.render('teachers/create')
 }
