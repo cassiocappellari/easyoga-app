@@ -78,7 +78,7 @@ exports.edit = function(req, res) {
 
     const teacher = {
         ...foundTeacher,
-        dateOfBirth: date(foundTeacher.dateOfBirth),
+        dateOfBirth: date(foundTeacher.dateOfBirth).iso,
         services: foundTeacher.services.split(',')
     }
 

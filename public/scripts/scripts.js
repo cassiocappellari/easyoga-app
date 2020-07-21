@@ -1,3 +1,4 @@
+const formDelete = document.querySelector('#form-delete')
 const currentPage = location.pathname
 const menuItens = document.querySelectorAll('header .links a')
 
