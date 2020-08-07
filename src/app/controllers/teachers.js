@@ -1,13 +1,12 @@
 const {age, skill, date} = require('../../lib/useful')
 const db = require('../../config/db')
+const Teacher = require('../models/Teacher')
 Intl = require('intl')
 
 module.exports = {
     index(req, res){
-        db.query(`SELECT * FROM teachers ORDER BY name ASC`, function(err, results) {
-            if(err) throw `Database error! ${err}`
-
-            return res.render('teachers/index', {teachers: results.rows})
+        Teacher.all(function(teachers){
+            return res.render('teachers/index', {teachers})
         })
     },
     create(req, res){
@@ -22,45 +21,47 @@ module.exports = {
             }
         }
 
-        const query = `
-            INSERT INTO teachers (
-                avatar_url,
-                name,
-                birth_date,
-                skill_level,
-                gender,
-                services,
-                created_at
-            ) VALUES ($1, $2, $3, $4, $5, $6, $7)
-            RETURNING id
-        `
+        Teacher.create(req.body, function(teacher) {
 
-        const values = [
-            req.body.avatar_url,
-            req.body.name,
-            date(req.body.birth_date).iso,
-            skill(req.body.skill_level),
-            req.body.gender,
-            req.body.services,
-            date(Date.now()).iso
-        ]
-
-        db.query(query, values, function(err, results){
-            if(err) throw `Database error! ${err}`
-
-            return res.redirect(`/teachers/${results.rows[0].id}`)
+            return res.redirect(`/teachers/${teacher.id}`)
         })
     },
     show(req, res){
-        return
+        Teacher.find(req.params.id, function(teacher){
+            if(!teacher) return res.send('Teacher not found!')
+
+            teacher.age = age(teacher.birth_date)
+            teacher.services = teacher.services.split(',')
+            teacher.created_at = date(teacher.created_at).format
+
+            return res.render('teachers/show', {teacher})
+        })
     },
     edit(req, res){
-        return
+        Teacher.find(req.params.id, function(teacher){
+            if(!teacher) return res.send('Teacher not found!')
+
+            teacher.birth_date = date(teacher.birth_date).iso
+
+            return res.render(`teachers/edit`, {teacher})
+        })
     },
     put(req, res){
-        return
+        const keys = Object.keys(req.body)
+
+        for(let key of keys) {
+            if(req.body[key] == '') {
+                return res.send('Please, fill all the fields!')
+            }
+        }
+
+        Teacher.update(req.body, function(){
+            return res.redirect(`/teachers/${req.body.id}`)
+        })
     },
     delete(req, res){
-        return
+        Teacher.delete(req.body.id, function(){
+            return res.redirect('/teachers')
+        })
     }
 }
