@@ -129,7 +129,8 @@ tbody tr td:first-child span {
 }
 
 tbody tr td:last-child a,
-.table-container a {
+.table-container a,
+.table-container .header form button {
     background-color: var(--calm-color);
     padding: 8px 16px;
     text-decoration: none;
@@ -149,7 +150,8 @@ tbody tr td:last-child a,
     transition: 300ms;
 }
 
-tbody tr td:last-child a:hover {
+tbody tr td:last-child a:hover,
+.table-container .header form button:hover {
     opacity: 0.7;
     transition: 300ms;
 }
@@ -157,4 +159,35 @@ tbody tr td:last-child a:hover {
 th:last-child,
 td:last-child {
     text-align: center;
+}
+
+.table-container .header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.table-container .header a {
+    margin: 0;
+    text-align: center;
+    width: 100px;
+}
+
+.table-container .header form {
+    display: grid;
+    grid-template-columns: 1fr 120px;
+    align-items: center;
+    grid-gap: 8px;
+}
+
+.table-container .header form button {
+    margin: 0;
+    cursor: pointer;
+}
+
+.table-container .header form input {
+    border: 1px solid #eee;
+    padding: 4px 8px;
+    box-sizing: border-box;
 }
