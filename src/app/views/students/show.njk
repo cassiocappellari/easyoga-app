@@ -36,6 +36,11 @@
                 <div>{{'Male' if student.gender == 'M' else 'Female'}}</div>
             </div>
 
+            <div class="item">
+                <div>Disciple of</div>
+                <div>{{student.teacher_name}}</div>
+            </div>
+
             <a href="/students/{{student.id}}/edit" class="button">Edit</a>
             
         </section>

@@ -82,3 +82,16 @@
         </select>
     </div>
 </div>
+
+<div class="item">
+    <div>Instructor</div>
+    <div>
+        <select name="teacher">
+            {%for teacher in teacherOptions%}
+            <option value="{{teacher.id}}" {%if member.teacher_id == teacher.id%}selected{%endif%}>
+                {{teacher.name}}
+            </option>
+            {%endfor%}
+        </select>
+    </div>
+</div>

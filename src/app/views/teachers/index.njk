@@ -12,6 +12,7 @@
                 <tr>
                     <th>Teachers</th>
                     <th>Services</th>
+                    <th>Students</th>
                     <th>Options</th>
                 </tr>
             </thead>
@@ -22,6 +23,7 @@
                             <span style="background-image: url({{teacher.avatar_url}})"></span>
                             {{teacher.name}}</td>
                         <td>{{teacher.services}}</td>
+                        <td>{{teacher.total_students}}</td>
                         <td><a href="/teachers/{{teacher.id}}">Details</a></td>
                     </tr>
                 {%endfor%}
