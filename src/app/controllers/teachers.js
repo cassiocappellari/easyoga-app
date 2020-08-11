@@ -5,9 +5,25 @@ Intl = require('intl')
 
 module.exports = {
     index(req, res){
-        const {filter} = req.query
+        let {filter, page, limit} = req.query
 
-        if(filter) {
+        page = page || 1
+        limit = limit || 2
+        let offset = limit * (page - 1)
+
+        const params = {
+            filter,
+            page,
+            limit,
+            offset,
+            callback(teachers) {
+                return res.render('teachers/index', {teachers, filter})
+            }
+        }
+
+        Teacher.paginate(params)
+
+        /*if(filter) {
             Teacher.findBy(filter, function(teachers){
                 return res.render('teachers/index', {teachers, filter})
             })
@@ -15,7 +31,7 @@ module.exports = {
             Teacher.all(function(teachers){
                 return res.render('teachers/index', {teachers})
             })
-        }
+        }*/
 
     },
     create(req, res){
