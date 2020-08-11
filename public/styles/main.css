@@ -48,11 +48,13 @@ header {
     left: 260px;
 }
 
-.links a.active {
+.links a#teachers.active,
+.links a#students.active {
     font-weight: bold;
 }
 
-.links a::after {
+.links a#teachers::after,
+.links a#students::after {
     content: "";
     width: 0;
     height: 2px;
@@ -62,7 +64,8 @@ header {
     bottom: -4px;
 }
 
-.links a:hover::after {
+.links a#teachers:hover::after,
+.links a#students:hover::after {
     width: 100%;
     transition: width 200ms ease-in-out;
 }

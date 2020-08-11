@@ -5,7 +5,7 @@
 .card {
     background-color: white;
     width: 800px;
-    min-height: 536px;
+    min-height: 500px;
     border-radius: 8px;
     margin: 0 auto;
 
@@ -28,13 +28,6 @@
         opacity: 1;
     }
 }
-
-/*.avatar {
-    background: url('https://source.unsplash.com/collection/4412133/500x500') no-repeat center center / cover;
-    width: 320px;
-    height: 540px;
-    border-radius: 8px 0 0 8px;
-}*/
 
 .details {
     width: 480px;
@@ -157,15 +150,34 @@ tbody tr td:last-child a:hover,
 }
 
 th:last-child,
-td:last-child {
+td:last-child,
+td#students {
     text-align: center;
+}
+
+.table-container {
+    display: grid;
+    grid-template: 64px 1fr 16px / 1fr;
 }
 
 .table-container .header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    margin-bottom: 16px;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.table-container .pagination {
+    margin: 0;
+    justify-self: center;
+}
+
+.pagination a,
+.pagination span {
+    background-color: white;
+    color: var(--calm-color);
+    font-size: 16px;
 }
 
 .table-container .header a {
@@ -191,3 +203,4 @@ td:last-child {
     padding: 4px 8px;
     box-sizing: border-box;
 }
+

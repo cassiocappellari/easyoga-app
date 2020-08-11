@@ -34,11 +34,17 @@
                             <span style="background-image: url({{teacher.avatar_url}})"></span>
                             {{teacher.name}}</td>
                         <td>{{teacher.services}}</td>
-                        <td>{{teacher.total_students}}</td>
+                        <td id="students">{{teacher.total_students}}</td>
                         <td><a href="/teachers/{{teacher.id}}">Details</a></td>
                     </tr>
                 {%endfor%}
             </tbody>
         </table>
+        <div class="pagination"
+            data-page={{pagination.page}}
+            data-total={{pagination.total}}
+            data-filter={{filter}}
+        >
+        </div>
     </div>
 {% endblock content %}
