@@ -21,6 +21,9 @@
 
 The project was developed using this technologies:
 
+**Database:**
+- [PostgreSQL](https://www.postgresql.org/)
+
 **Back-end:**
 - [Node.js](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
