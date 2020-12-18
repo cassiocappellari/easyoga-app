@@ -2,6 +2,8 @@
     <img src="./public/assets/easyoga-demo-gif.gif">
 </h1>
 
+Status:
+
 ## 📋 Index
 
 - [About](#-about)
