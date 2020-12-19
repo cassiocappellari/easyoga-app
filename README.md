@@ -4,7 +4,9 @@
     <img src="./public/assets/easyoga-demo-gif.gif">
 </h1>
 
-Status:
+<h3 align="center"> 
+	Status: under construction :warning:
+</h3>
 
 ## 📋 Index
 
