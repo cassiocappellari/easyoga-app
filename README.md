@@ -26,6 +26,7 @@
 - [Technologies](#-technologies)
 - [How To Use](#-how-to-use)
 - [Author](#-author)
+- [License](#-license)
 
 ## 🧘‍♀️ About
 
