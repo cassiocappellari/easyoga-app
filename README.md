@@ -15,13 +15,9 @@
 - [How To Use](#-how-to-use)
 - [Author](#-author)
 
----
-
 ## 🧘‍♀️ About
 
 **Easyoga** is a web platform that connects yoga teachers and students with the main purpose of disseminate online practices and guided meditations. The project is a **fullstack application** (backend and frontend) developed during the coding bootcamp named LaunchBase, by [Rocketseat](https://rocketseat.com.br/).
-
----
 
 ## 🤖 Technologies
 
@@ -40,8 +36,6 @@ The project was developed using this technologies:
 - [JavaScript](https://js.org/)
 - [Nunjucks](https://mozilla.github.io/nunjucks/)
 
----
-
 ## ⚙ How to Use
 
 ```bash
@@ -58,8 +52,6 @@ $ npm install
 $ npm start
 
 ```
-
----
 
 ## 👨‍🚀 Author
 
