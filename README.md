@@ -1,3 +1,5 @@
+<h1 align="center">Easyoga</h1>
+
 <h1 align="center">
     <img src="./public/assets/easyoga-demo-gif.gif">
 </h1>
