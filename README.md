@@ -72,6 +72,10 @@ $ npm start
 - GitHub: [@cassiocappellari](https://github.com/cassiocappellari)
 - LinkedIn: [@cassiocappellari](https://www.linkedin.com/in/cassiocappellari/)
 
+## 📝 License
+
+This project is under the [MIT](./LICENSE) license.
+
 ---
 
 Developed with 💚 by Cássio Cappellari!
