@@ -53,7 +53,11 @@ The project was developed using this technologies:
 ```bash
 # Clone this repository
 
-$ git clone https://github.com/cassiocappellari/easyoga-app
+$ git clone https://github.com/cassiocappellari/easyoga-app.git
+
+# Enter the project folder
+
+$ cd easyoga-app
 
 # Install the dependencies
 
