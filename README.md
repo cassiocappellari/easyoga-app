@@ -8,6 +8,18 @@
 	Status: under construction :warning:
 </h3>
 
+<p align="center">
+<a href="https://github.com/cassiocappellari/easyoga-app/commits/master">
+	<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/cassiocappellari/easyoga-app/master?color=blue">
+</a>
+    
+<img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
+
+<a href="https://github.com/cassiocappellari/easyoga-app/stargazers">
+	<img alt="Stargazers" src="https://img.shields.io/github/stars/cassiocappellari/easyoga-app?style=social">
+</a>
+</p>
+
 ## 📋 Index
 
 - [About](#-about)
