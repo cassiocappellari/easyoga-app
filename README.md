@@ -30,7 +30,7 @@
 
 ## 🧘‍♀️ About
 
-**Easyoga** is a web platform that connects yoga teachers and students with the main purpose of disseminate online practices and guided meditations. The project is a **fullstack application** (backend and frontend) developed during the coding bootcamp named LaunchBase, by [Rocketseat](https://rocketseat.com.br/).
+**Easyoga** is a web platform that connects yoga teachers and students with the main purpose of disseminate online practices and guided meditations. The project is a **full stack application** (back-end and front-end) developed during the coding bootcamp named LaunchBase, by [Rocketseat](https://rocketseat.com.br/).
 
 ## 🤖 Technologies
 
